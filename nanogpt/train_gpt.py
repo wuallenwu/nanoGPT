@@ -1,34 +1,8 @@
-"""File to train the GPT model. This file contains the GPT model definition and the training loop.
+"""Example GPT2 which uses the weights from Huggingface model
 
-GPT MODEL:
-1. Input tokenization - convert input text into tokens that the model can process
+Reproducible example for inference only 
 
-2. Input embedding - convert tokens into vectors that the model can understand
-
-3. Positional encoding - add information about the position of each token in the sequence
-
-4. Transformer blocks - process the tokens and their relationships
-a. LayerNorm - normalize the input
-b. Self-Attention - look at previous tokens in sequence to determine the ones to pay more or less attention to
-c. MLP/FFN - increase detail and complexity for each token individually (for example, information like part of speech,
-   subject, etc.). The tokens also learn information like semantic meaning and syntactic role.
-
-5. Normalize output
-
-6. Linear layer - maps final representations to a vector the size of the vocabulary
-
-7. Softmax - converts the output into probabilities for each token in the vocabulary
-
-8. Next token prediction - predict the next token in the sequence based on the input tokens
-
-TRAINING:
-1. Load the dataset
-
-2. Tokenize the dataset
-
-3. Initialize the GPT model
-
-4. Define the loss function (cross-entropy loss (negative log likelihood of correct token))
+! Very Vulgar at times !
 
 """
 
